@@ -2,8 +2,7 @@
 //  MBWPViewController.m
 //  Weekend Picks
 //
-//  Created by Justin Miller on 6/15/12.
-//  Copyright (c) 2012 MapBox / Development Seed. All rights reserved.
+//  Copyright (c) 2014 Mapbox, Inc. All rights reserved.
 //
 
 #import "MBWPViewController.h"
@@ -13,8 +12,7 @@
 
 #import "UIColor+MBWPExtensions.h"
 
-#define kNormalMapID  @"examples.map-zr0njcqy"
-#define kRetinaMapID  @"examples.map-zjm2w6i9"
+#define kMapboxMapID  @"examples.map-zr0njcqy"
 #define kTintColorHex @"#AA0000"
 
 @interface MBWPViewController ()
@@ -48,17 +46,19 @@
 
     // this auto-enables annotations based on simplestyle data for this map (see http://mapbox.com/developers/simplestyle/ for more info)
     //
-    self.mapView.tileSource = [[RMMapBoxSource alloc] initWithMapID:([[UIScreen mainScreen] scale] > 1.0 ? kRetinaMapID : kNormalMapID)
-                                              enablingDataOnMapView:self.mapView];
-    
+    self.mapView.tileSource = [[RMMapboxSource alloc] initWithMapID:kMapboxMapID enablingDataOnMapView:self.mapView];
+
     self.mapView.zoom = 2;
-    
+
     [self.mapView setConstraintsSouthWest:[self.mapView.tileSource latitudeLongitudeBoundingBox].southWest 
                                 northEast:[self.mapView.tileSource latitudeLongitudeBoundingBox].northEast];
     
     self.mapView.showsUserLocation = YES;
     
     self.title = [self.mapView.tileSource shortName];
+
+    if ([UIView instancesRespondToSelector:@selector(setTintColor:)])
+        self.mapView.tintColor = self.navigationController.navigationBar.tintColor;
 
     // zoom in to markers after launch
     //
@@ -68,7 +68,7 @@
     {
         float degreeRadius = 9000.f / 110000.f; // (9000m / 110km per degree latitude)
         
-        CLLocationCoordinate2D centerCoordinate = [((RMMapBoxSource *)self.mapView.tileSource) centerCoordinate];
+        CLLocationCoordinate2D centerCoordinate = [((RMMapboxSource *)self.mapView.tileSource) centerCoordinate];
         
         RMSphericalTrapezium zoomBounds = {
             .southWest = {
@@ -127,7 +127,7 @@
     if (annotation.isUserLocationAnnotation)
         return nil;
 
-    RMMarker *marker = [[RMMarker alloc] initWithMapBoxMarkerImage:[annotation.userInfo objectForKey:@"marker-symbol"]
+    RMMarker *marker = [[RMMarker alloc] initWithMapboxMarkerImage:[annotation.userInfo objectForKey:@"marker-symbol"]
                                                       tintColorHex:[annotation.userInfo objectForKey:@"marker-color"]
                                                         sizeString:[annotation.userInfo objectForKey:@"marker-size"]];
 

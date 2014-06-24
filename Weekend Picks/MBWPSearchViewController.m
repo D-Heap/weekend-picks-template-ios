@@ -2,8 +2,7 @@
 //  MTSearchViewController.m
 //  Transit PDX
 //
-//  Created by Justin Miller on 6/15/12.
-//  Copyright (c) 2012 MapBox / Development Seed. All rights reserved.
+//  Copyright (c) 2014 Mapbox, Inc. All rights reserved.
 //
 
 #import "MBWPSearchViewController.h"
