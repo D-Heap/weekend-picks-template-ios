@@ -26,8 +26,8 @@
 		DD9530A7158F933A00E9FD42 /* UIColor+MBWPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9530A6158F933A00E9FD42 /* UIColor+MBWPExtensions.m */; };
 		DD9BFE4F1601419B0011F174 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE4E1601419B0011F174 /* Default-568h@2x.png */; };
 		DDA38812158FAF6600AC339E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA38811158FAF6600AC339E /* icon.png */; };
-		DDB57B501959EA6600FE1035 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB57B4F1959EA6600FE1035 /* Mapbox.framework */; };
-		DDB57B531959EB5A00FE1035 /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDB57B521959EB5A00FE1035 /* Mapbox.bundle */; };
+		DDA878F019AE9C24006AFD7A /* libMapbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA878EE19AE9C24006AFD7A /* libMapbox.a */; };
+		DDA878F119AE9C24006AFD7A /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDA878EF19AE9C24006AFD7A /* Mapbox.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +58,64 @@
 		DD9530A6158F933A00E9FD42 /* UIColor+MBWPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MBWPExtensions.m"; sourceTree = "<group>"; };
 		DD9BFE4E1601419B0011F174 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		DDA38811158FAF6600AC339E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
-		DDB57B4F1959EA6600FE1035 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
-		DDB57B521959EB5A00FE1035 /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Mapbox.bundle; path = ../Mapbox.framework/Versions/A/Resources/Mapbox.bundle; sourceTree = "<group>"; };
+		DDA878B619AE9C24006AFD7A /* Mapbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapbox.h; sourceTree = "<group>"; };
+		DDA878B719AE9C24006AFD7A /* RMAbstractMercatorTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractMercatorTileSource.h; sourceTree = "<group>"; };
+		DDA878B819AE9C24006AFD7A /* RMAbstractWebMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractWebMapSource.h; sourceTree = "<group>"; };
+		DDA878B919AE9C24006AFD7A /* RMAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAnnotation.h; sourceTree = "<group>"; };
+		DDA878BA19AE9C24006AFD7A /* RMAttributionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAttributionViewController.h; sourceTree = "<group>"; };
+		DDA878BB19AE9C24006AFD7A /* RMBingSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMBingSource.h; sourceTree = "<group>"; };
+		DDA878BC19AE9C24006AFD7A /* RMCacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCacheObject.h; sourceTree = "<group>"; };
+		DDA878BD19AE9C24006AFD7A /* RMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCircle.h; sourceTree = "<group>"; };
+		DDA878BE19AE9C24006AFD7A /* RMCircleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCircleAnnotation.h; sourceTree = "<group>"; };
+		DDA878BF19AE9C24006AFD7A /* RMCompositeSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCompositeSource.h; sourceTree = "<group>"; };
+		DDA878C019AE9C24006AFD7A /* RMConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMConfiguration.h; sourceTree = "<group>"; };
+		DDA878C119AE9C24006AFD7A /* RMCoordinateGridSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCoordinateGridSource.h; sourceTree = "<group>"; };
+		DDA878C219AE9C24006AFD7A /* RMDatabaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDatabaseCache.h; sourceTree = "<group>"; };
+		DDA878C319AE9C24006AFD7A /* RMDBMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDBMapSource.h; sourceTree = "<group>"; };
+		DDA878C419AE9C24006AFD7A /* RMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFoundation.h; sourceTree = "<group>"; };
+		DDA878C519AE9C24006AFD7A /* RMFractalTileProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFractalTileProjection.h; sourceTree = "<group>"; };
+		DDA878C619AE9C24006AFD7A /* RMGenericMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGenericMapSource.h; sourceTree = "<group>"; };
+		DDA878C719AE9C24006AFD7A /* RMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGlobalConstants.h; sourceTree = "<group>"; };
+		DDA878C819AE9C24006AFD7A /* RMGreatCircleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGreatCircleAnnotation.h; sourceTree = "<group>"; };
+		DDA878C919AE9C24006AFD7A /* RMInteractiveSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMInteractiveSource.h; sourceTree = "<group>"; };
+		DDA878CA19AE9C24006AFD7A /* RMLoadingTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLoadingTileView.h; sourceTree = "<group>"; };
+		DDA878CB19AE9C24006AFD7A /* RMMapboxSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapboxSource.h; sourceTree = "<group>"; };
+		DDA878CC19AE9C24006AFD7A /* RMMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapLayer.h; sourceTree = "<group>"; };
+		DDA878CD19AE9C24006AFD7A /* RMMapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapOverlayView.h; sourceTree = "<group>"; };
+		DDA878CE19AE9C24006AFD7A /* RMMapQuestOpenAerialSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapQuestOpenAerialSource.h; sourceTree = "<group>"; };
+		DDA878CF19AE9C24006AFD7A /* RMMapQuestOSMSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapQuestOSMSource.h; sourceTree = "<group>"; };
+		DDA878D019AE9C24006AFD7A /* RMMapScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapScrollView.h; sourceTree = "<group>"; };
+		DDA878D119AE9C24006AFD7A /* RMMapTiledLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapTiledLayerView.h; sourceTree = "<group>"; };
+		DDA878D219AE9C24006AFD7A /* RMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapView.h; sourceTree = "<group>"; };
+		DDA878D319AE9C24006AFD7A /* RMMapViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapViewDelegate.h; sourceTree = "<group>"; };
+		DDA878D419AE9C24006AFD7A /* RMMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMarker.h; sourceTree = "<group>"; };
+		DDA878D519AE9C24006AFD7A /* RMMBTilesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMBTilesSource.h; sourceTree = "<group>"; };
+		DDA878D619AE9C24006AFD7A /* RMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMemoryCache.h; sourceTree = "<group>"; };
+		DDA878D719AE9C24006AFD7A /* RMNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNotifications.h; sourceTree = "<group>"; };
+		DDA878D819AE9C24006AFD7A /* RMOpenCycleMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenCycleMapSource.h; sourceTree = "<group>"; };
+		DDA878D919AE9C24006AFD7A /* RMOpenSeaMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenSeaMapLayer.h; sourceTree = "<group>"; };
+		DDA878DA19AE9C24006AFD7A /* RMOpenSeaMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenSeaMapSource.h; sourceTree = "<group>"; };
+		DDA878DB19AE9C24006AFD7A /* RMOpenStreetMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenStreetMapSource.h; sourceTree = "<group>"; };
+		DDA878DC19AE9C24006AFD7A /* RMPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPixel.h; sourceTree = "<group>"; };
+		DDA878DD19AE9C24006AFD7A /* RMPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPointAnnotation.h; sourceTree = "<group>"; };
+		DDA878DE19AE9C24006AFD7A /* RMPolygonAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPolygonAnnotation.h; sourceTree = "<group>"; };
+		DDA878DF19AE9C24006AFD7A /* RMPolylineAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPolylineAnnotation.h; sourceTree = "<group>"; };
+		DDA878E019AE9C24006AFD7A /* RMProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMProjection.h; sourceTree = "<group>"; };
+		DDA878E119AE9C24006AFD7A /* RMQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQuadTree.h; sourceTree = "<group>"; };
+		DDA878E219AE9C24006AFD7A /* RMShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMShape.h; sourceTree = "<group>"; };
+		DDA878E319AE9C24006AFD7A /* RMShapeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMShapeAnnotation.h; sourceTree = "<group>"; };
+		DDA878E419AE9C24006AFD7A /* RMStaticMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMStaticMapView.h; sourceTree = "<group>"; };
+		DDA878E519AE9C24006AFD7A /* RMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTile.h; sourceTree = "<group>"; };
+		DDA878E619AE9C24006AFD7A /* RMTileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCache.h; sourceTree = "<group>"; };
+		DDA878E719AE9C24006AFD7A /* RMTileCacheDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCacheDownloadOperation.h; sourceTree = "<group>"; };
+		DDA878E819AE9C24006AFD7A /* RMTileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileImage.h; sourceTree = "<group>"; };
+		DDA878E919AE9C24006AFD7A /* RMTileMillSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileMillSource.h; sourceTree = "<group>"; };
+		DDA878EA19AE9C24006AFD7A /* RMTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileSource.h; sourceTree = "<group>"; };
+		DDA878EB19AE9C24006AFD7A /* RMTileSourcesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileSourcesContainer.h; sourceTree = "<group>"; };
+		DDA878EC19AE9C24006AFD7A /* RMUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserLocation.h; sourceTree = "<group>"; };
+		DDA878ED19AE9C24006AFD7A /* RMUserTrackingBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserTrackingBarButtonItem.h; sourceTree = "<group>"; };
+		DDA878EE19AE9C24006AFD7A /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapbox.a; path = Mapbox/libMapbox.a; sourceTree = SOURCE_ROOT; };
+		DDA878EF19AE9C24006AFD7A /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Mapbox.bundle; path = Mapbox/Mapbox.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +126,9 @@
 				DD8CD180158C27F200067C1B /* CoreGraphics.framework in Frameworks */,
 				DD8CD1B0158C297C00067C1B /* CoreLocation.framework in Frameworks */,
 				DD8CD17E158C27F200067C1B /* Foundation.framework in Frameworks */,
-				DDB57B501959EA6600FE1035 /* Mapbox.framework in Frameworks */,
 				DD8CD1B2158C298200067C1B /* QuartzCore.framework in Frameworks */,
 				DD8CD17C158C27F200067C1B /* UIKit.framework in Frameworks */,
+				DDA878F019AE9C24006AFD7A /* libMapbox.a in Frameworks */,
 				DD8CD1B4158C298700067C1B /* libsqlite3.dylib in Frameworks */,
 				DD8CD1B6158C298B00067C1B /* libz.dylib in Frameworks */,
 			);
@@ -87,6 +143,7 @@
 				DD8CD181158C27F200067C1B /* Weekend Picks */,
 				DD9530A8158F965D00E9FD42 /* Categories */,
 				DD8CD1BA158C2A9E00067C1B /* Resources */,
+				DDA878B419AE9C1A006AFD7A /* Mapbox */,
 				DD8CD17A158C27F200067C1B /* Frameworks */,
 				DD8CD178158C27F200067C1B /* Products */,
 			);
@@ -106,7 +163,6 @@
 				DD8CD17F158C27F200067C1B /* CoreGraphics.framework */,
 				DD8CD1AF158C297C00067C1B /* CoreLocation.framework */,
 				DD8CD17D158C27F200067C1B /* Foundation.framework */,
-				DDB57B4F1959EA6600FE1035 /* Mapbox.framework */,
 				DD8CD1B1158C298200067C1B /* QuartzCore.framework */,
 				DD8CD17B158C27F200067C1B /* UIKit.framework */,
 				DD8CD1B3158C298700067C1B /* libsqlite3.dylib */,
@@ -150,7 +206,6 @@
 				DDA38811158FAF6600AC339E /* icon.png */,
 				DD930BF215ACFCC90066071A /* icon@2x.png */,
 				DD9BFE4E1601419B0011F174 /* Default-568h@2x.png */,
-				DDB57B521959EB5A00FE1035 /* Mapbox.bundle */,
 			);
 			name = Resources;
 			path = "Weekend Picks";
@@ -165,6 +220,81 @@
 			name = Categories;
 			path = "Weekend Picks";
 			sourceTree = "<group>";
+		};
+		DDA878B419AE9C1A006AFD7A /* Mapbox */ = {
+			isa = PBXGroup;
+			children = (
+				DDA878B519AE9C24006AFD7A /* Headers */,
+				DDA878EE19AE9C24006AFD7A /* libMapbox.a */,
+				DDA878EF19AE9C24006AFD7A /* Mapbox.bundle */,
+			);
+			name = Mapbox;
+			path = "Weekend Picks";
+			sourceTree = "<group>";
+		};
+		DDA878B519AE9C24006AFD7A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DDA878B619AE9C24006AFD7A /* Mapbox.h */,
+				DDA878B719AE9C24006AFD7A /* RMAbstractMercatorTileSource.h */,
+				DDA878B819AE9C24006AFD7A /* RMAbstractWebMapSource.h */,
+				DDA878B919AE9C24006AFD7A /* RMAnnotation.h */,
+				DDA878BA19AE9C24006AFD7A /* RMAttributionViewController.h */,
+				DDA878BB19AE9C24006AFD7A /* RMBingSource.h */,
+				DDA878BC19AE9C24006AFD7A /* RMCacheObject.h */,
+				DDA878BD19AE9C24006AFD7A /* RMCircle.h */,
+				DDA878BE19AE9C24006AFD7A /* RMCircleAnnotation.h */,
+				DDA878BF19AE9C24006AFD7A /* RMCompositeSource.h */,
+				DDA878C019AE9C24006AFD7A /* RMConfiguration.h */,
+				DDA878C119AE9C24006AFD7A /* RMCoordinateGridSource.h */,
+				DDA878C219AE9C24006AFD7A /* RMDatabaseCache.h */,
+				DDA878C319AE9C24006AFD7A /* RMDBMapSource.h */,
+				DDA878C419AE9C24006AFD7A /* RMFoundation.h */,
+				DDA878C519AE9C24006AFD7A /* RMFractalTileProjection.h */,
+				DDA878C619AE9C24006AFD7A /* RMGenericMapSource.h */,
+				DDA878C719AE9C24006AFD7A /* RMGlobalConstants.h */,
+				DDA878C819AE9C24006AFD7A /* RMGreatCircleAnnotation.h */,
+				DDA878C919AE9C24006AFD7A /* RMInteractiveSource.h */,
+				DDA878CA19AE9C24006AFD7A /* RMLoadingTileView.h */,
+				DDA878CB19AE9C24006AFD7A /* RMMapboxSource.h */,
+				DDA878CC19AE9C24006AFD7A /* RMMapLayer.h */,
+				DDA878CD19AE9C24006AFD7A /* RMMapOverlayView.h */,
+				DDA878CE19AE9C24006AFD7A /* RMMapQuestOpenAerialSource.h */,
+				DDA878CF19AE9C24006AFD7A /* RMMapQuestOSMSource.h */,
+				DDA878D019AE9C24006AFD7A /* RMMapScrollView.h */,
+				DDA878D119AE9C24006AFD7A /* RMMapTiledLayerView.h */,
+				DDA878D219AE9C24006AFD7A /* RMMapView.h */,
+				DDA878D319AE9C24006AFD7A /* RMMapViewDelegate.h */,
+				DDA878D419AE9C24006AFD7A /* RMMarker.h */,
+				DDA878D519AE9C24006AFD7A /* RMMBTilesSource.h */,
+				DDA878D619AE9C24006AFD7A /* RMMemoryCache.h */,
+				DDA878D719AE9C24006AFD7A /* RMNotifications.h */,
+				DDA878D819AE9C24006AFD7A /* RMOpenCycleMapSource.h */,
+				DDA878D919AE9C24006AFD7A /* RMOpenSeaMapLayer.h */,
+				DDA878DA19AE9C24006AFD7A /* RMOpenSeaMapSource.h */,
+				DDA878DB19AE9C24006AFD7A /* RMOpenStreetMapSource.h */,
+				DDA878DC19AE9C24006AFD7A /* RMPixel.h */,
+				DDA878DD19AE9C24006AFD7A /* RMPointAnnotation.h */,
+				DDA878DE19AE9C24006AFD7A /* RMPolygonAnnotation.h */,
+				DDA878DF19AE9C24006AFD7A /* RMPolylineAnnotation.h */,
+				DDA878E019AE9C24006AFD7A /* RMProjection.h */,
+				DDA878E119AE9C24006AFD7A /* RMQuadTree.h */,
+				DDA878E219AE9C24006AFD7A /* RMShape.h */,
+				DDA878E319AE9C24006AFD7A /* RMShapeAnnotation.h */,
+				DDA878E419AE9C24006AFD7A /* RMStaticMapView.h */,
+				DDA878E519AE9C24006AFD7A /* RMTile.h */,
+				DDA878E619AE9C24006AFD7A /* RMTileCache.h */,
+				DDA878E719AE9C24006AFD7A /* RMTileCacheDownloadOperation.h */,
+				DDA878E819AE9C24006AFD7A /* RMTileImage.h */,
+				DDA878E919AE9C24006AFD7A /* RMTileMillSource.h */,
+				DDA878EA19AE9C24006AFD7A /* RMTileSource.h */,
+				DDA878EB19AE9C24006AFD7A /* RMTileSourcesContainer.h */,
+				DDA878EC19AE9C24006AFD7A /* RMUserLocation.h */,
+				DDA878ED19AE9C24006AFD7A /* RMUserTrackingBarButtonItem.h */,
+			);
+			name = Headers;
+			path = Mapbox/Headers;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -221,10 +351,10 @@
 				DD8CD186158C27F300067C1B /* InfoPlist.strings in Resources */,
 				DD8CD192158C27F300067C1B /* MBWPViewController.xib in Resources */,
 				DDA38812158FAF6600AC339E /* icon.png in Resources */,
+				DDA878F119AE9C24006AFD7A /* Mapbox.bundle in Resources */,
 				DD930BF315ACFCC90066071A /* icon@2x.png in Resources */,
 				DD50C8CE15D30BB7006CA033 /* Washington, DC.gpx in Resources */,
 				DD9BFE4F1601419B0011F174 /* Default-568h@2x.png in Resources */,
-				DDB57B531959EB5A00FE1035 /* Mapbox.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +474,10 @@
 					"\"$(SRCROOT)/Mapbox.framework/Headers\"",
 				);
 				INFOPLIST_FILE = "Weekend Picks/Weekend Picks-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mapbox",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Picks;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,6 +500,10 @@
 					"\"$(SRCROOT)/Mapbox.framework/Headers\"",
 				);
 				INFOPLIST_FILE = "Weekend Picks/Weekend Picks-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mapbox",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Picks;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,6 +555,10 @@
 					"\"$(SRCROOT)/Mapbox.framework/Headers\"",
 				);
 				INFOPLIST_FILE = "Weekend Picks/Weekend Picks-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mapbox",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Picks;
 				TARGETED_DEVICE_FAMILY = "1,2";
