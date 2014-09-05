@@ -43,8 +43,6 @@
     self.navigationItem.leftBarButtonItem.tintColor = self.navigationController.navigationBar.tintColor;
 
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Map" style:UIBarButtonItemStyleBordered target:nil action:nil];
-
-    [[RMConfiguration configuration] setAccessToken:@"pk.eyJ1IjoianVzdGluIiwiYSI6IlpDbUJLSUEifQ.4mG8vhelFMju6HpIY-Hi5A"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
