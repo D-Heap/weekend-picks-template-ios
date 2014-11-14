@@ -22,12 +22,11 @@
 		DD8CD1B6158C298B00067C1B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8CD1B5158C298B00067C1B /* libz.dylib */; };
 		DD8CD1B9158C2A7500067C1B /* MBWPSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8CD1B8158C2A7500067C1B /* MBWPSearchViewController.m */; };
 		DD8D9582158C4ABB00C4C4C3 /* MBWPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8D9581158C4ABB00C4C4C3 /* MBWPDetailViewController.m */; };
-		DD930BF315ACFCC90066071A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD930BF215ACFCC90066071A /* icon@2x.png */; };
 		DD9530A7158F933A00E9FD42 /* UIColor+MBWPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9530A6158F933A00E9FD42 /* UIColor+MBWPExtensions.m */; };
-		DD9BFE4F1601419B0011F174 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9BFE4E1601419B0011F174 /* Default-568h@2x.png */; };
-		DDA38812158FAF6600AC339E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA38811158FAF6600AC339E /* icon.png */; };
 		DDA878F019AE9C24006AFD7A /* libMapbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA878EE19AE9C24006AFD7A /* libMapbox.a */; };
 		DDA878F119AE9C24006AFD7A /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDA878EF19AE9C24006AFD7A /* Mapbox.bundle */; };
+		DDC930011A15988C0082BDE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC92FFF1A15988C0082BDE8 /* Images.xcassets */; };
+		DDC930021A15988C0082BDE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC930001A15988C0082BDE8 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +52,8 @@
 		DD8CD1B8158C2A7500067C1B /* MBWPSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWPSearchViewController.m; sourceTree = "<group>"; };
 		DD8D9580158C4ABB00C4C4C3 /* MBWPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBWPDetailViewController.h; sourceTree = "<group>"; };
 		DD8D9581158C4ABB00C4C4C3 /* MBWPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWPDetailViewController.m; sourceTree = "<group>"; };
-		DD930BF215ACFCC90066071A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		DD9530A5158F933A00E9FD42 /* UIColor+MBWPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MBWPExtensions.h"; sourceTree = "<group>"; };
 		DD9530A6158F933A00E9FD42 /* UIColor+MBWPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MBWPExtensions.m"; sourceTree = "<group>"; };
-		DD9BFE4E1601419B0011F174 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
-		DDA38811158FAF6600AC339E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		DDA878B619AE9C24006AFD7A /* Mapbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapbox.h; sourceTree = "<group>"; };
 		DDA878B719AE9C24006AFD7A /* RMAbstractMercatorTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractMercatorTileSource.h; sourceTree = "<group>"; };
 		DDA878B819AE9C24006AFD7A /* RMAbstractWebMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractWebMapSource.h; sourceTree = "<group>"; };
@@ -116,6 +112,8 @@
 		DDA878ED19AE9C24006AFD7A /* RMUserTrackingBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserTrackingBarButtonItem.h; sourceTree = "<group>"; };
 		DDA878EE19AE9C24006AFD7A /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapbox.a; path = Mapbox/libMapbox.a; sourceTree = SOURCE_ROOT; };
 		DDA878EF19AE9C24006AFD7A /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Mapbox.bundle; path = Mapbox/Mapbox.bundle; sourceTree = SOURCE_ROOT; };
+		DDC92FFF1A15988C0082BDE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDC930001A15988C0082BDE8 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +140,6 @@
 			children = (
 				DD8CD181158C27F200067C1B /* Weekend Picks */,
 				DD9530A8158F965D00E9FD42 /* Categories */,
-				DD8CD1BA158C2A9E00067C1B /* Resources */,
 				DDA878B419AE9C1A006AFD7A /* Mapbox */,
 				DD8CD17A158C27F200067C1B /* Frameworks */,
 				DD8CD178158C27F200067C1B /* Products */,
@@ -183,6 +180,8 @@
 				DD8CD1B8158C2A7500067C1B /* MBWPSearchViewController.m */,
 				DD8D9580158C4ABB00C4C4C3 /* MBWPDetailViewController.h */,
 				DD8D9581158C4ABB00C4C4C3 /* MBWPDetailViewController.m */,
+				DDC92FFF1A15988C0082BDE8 /* Images.xcassets */,
+				DDC930001A15988C0082BDE8 /* LaunchScreen.xib */,
 				DD8CD182158C27F300067C1B /* Supporting Files */,
 			);
 			path = "Weekend Picks";
@@ -198,17 +197,6 @@
 				DD50C8CD15D30BB7006CA033 /* Washington, DC.gpx */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DD8CD1BA158C2A9E00067C1B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DDA38811158FAF6600AC339E /* icon.png */,
-				DD930BF215ACFCC90066071A /* icon@2x.png */,
-				DD9BFE4E1601419B0011F174 /* Default-568h@2x.png */,
-			);
-			name = Resources;
-			path = "Weekend Picks";
 			sourceTree = "<group>";
 		};
 		DD9530A8158F965D00E9FD42 /* Categories */ = {
@@ -349,12 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8CD186158C27F300067C1B /* InfoPlist.strings in Resources */,
+				DDC930011A15988C0082BDE8 /* Images.xcassets in Resources */,
 				DD8CD192158C27F300067C1B /* MBWPViewController.xib in Resources */,
-				DDA38812158FAF6600AC339E /* icon.png in Resources */,
 				DDA878F119AE9C24006AFD7A /* Mapbox.bundle in Resources */,
-				DD930BF315ACFCC90066071A /* icon@2x.png in Resources */,
+				DDC930021A15988C0082BDE8 /* LaunchScreen.xib in Resources */,
 				DD50C8CE15D30BB7006CA033 /* Washington, DC.gpx in Resources */,
-				DD9BFE4F1601419B0011F174 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +453,8 @@
 		DD8CD196158C27F300067C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -492,6 +481,8 @@
 		DD8CD197158C27F300067C1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -549,6 +540,8 @@
 		DDD7C5EB159001E90061B9F4 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
